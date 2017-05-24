@@ -7,11 +7,11 @@ TRY_LOOP="20"
 : ${REDIS_HOST:="redis"}
 : ${REDIS_PORT:="6379"}
 
-: ${POSTGRES_HOST:="postgres"}
+: ${POSTGRES_HOST:="cde-airflow.c1a1plgrhwop.us-east-1.rds.amazonaws.com"}
 : ${POSTGRES_PORT:="5432"}
-: ${POSTGRES_USER:="airflow"}
-: ${POSTGRES_PASSWORD:="airflow"}
-: ${POSTGRES_DB:="airflow"}
+: ${POSTGRES_USER:="cdeAirflowMaster"}
+: ${POSTGRES_PASSWORD:="nottherealpassword"}
+: ${POSTGRES_DB:="cdeAirflow"}
 
 : ${FERNET_KEY:=$(python -c "from cryptography.fernet import Fernet; FERNET_KEY = Fernet.generate_key().decode(); print(FERNET_KEY)")}
 
