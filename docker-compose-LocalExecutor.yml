@@ -13,8 +13,9 @@ services:
         depends_on:
             - postgres
         environment:
-            - LOAD_EX=y
+            - LOAD_EX=n
             - EXECUTOR=Local
+            - FERNET_KEY=U_HRDNLt20TjStfKkTlopJW7wGcJbExlmknp-m4zzMg=
         # volumes:
             # - ~/github/docker-airflow/dags:/usr/local/airflow/dags
         ports:
